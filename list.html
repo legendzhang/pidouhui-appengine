@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+<body>
+<table width="300" border="0">
+  <tr>
+    <td width="100%" align="left" valign="top"><big>{{ type|escape }}</big>
+      <table border="1" width="991">
+    {% for item in itemlist %}
+        <tr>
+          <td width="106">{{ item.name|escape }}</td>
+          <td width="240">{{ item.type|escape }}</td>
+          <td>{{ item.content|escape }}</td>
+          <td width="245">{{ item.date|escape }}</td>
+        </tr>
+    {% endfor %}
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
